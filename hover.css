@@ -1,0 +1,40 @@
+.effect:hover {
+  background-color: white;
+  color: black;
+  transform: scaleX(1.025);
+  border: none;
+}
+.effect {
+  transition: all 0.15s;
+}
+
+.viewport:hover {
+  transform: scale(1.0125);
+}
+.viewport {
+  transition: all 0.15s;
+  transition-timing-function: cubic-bezier(.21,-1.41,.73,1.7);
+}
+
+.button-mode:hover {
+  border-radius: 8px;
+}
+.button-mode {
+  transition: all 0.15s;
+}
+
+.edit:hover {
+  background-image: radial-gradient(rgb(25, 0, 0), rgba(255, 0, 0, 0.6));
+}
+
+
+@keyframes move {
+  0% {translate: 0 0;}
+  50% {translate: 0 -20px;}
+  100% {translate: 0 0;}
+}
+
+@keyframes fadein {
+  0% {opacity: 0.5; filter: blur(8px); translate: 0 5vh; transform: scale(0.95);}
+  100% {opacity: 1; filter: blur(0);}
+}
